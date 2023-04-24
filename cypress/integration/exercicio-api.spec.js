@@ -3,7 +3,7 @@ import contrato from '../contracts/usuarios.contract'
 
 describe('Testes da Funcionalidade Usuários', () => {});
 
-     it.only('Deve validar contrato de usuários', () => {
+     it('Deve validar contrato de usuários', () => {
           //TODO: contrado 
           cy.request('usuarios').then(response => {
                return contrato.validateAsync(response.body)
